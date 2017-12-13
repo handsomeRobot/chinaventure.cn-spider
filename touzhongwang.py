@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import time
+from optparse import OptionParser
 
 outfile = open('touzhongwang.csv', 'w')
 
@@ -42,8 +43,10 @@ def unit(tag):
 
 #main flow
 url = 'https://www.chinaventure.com.cn/event/list.shtml'
-username = 'skatekang@126.com'
-password = 'I8840N82Jtouzhong'
+parser = OptionParser()
+(options, args) = parser.parse_args()
+username = str(args[0])
+password = str(args[1])
 driver = webdriver.Firefox()
 driver.set_window_size(1000, 1000)
 driver.get(url)
