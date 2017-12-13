@@ -8,6 +8,9 @@ The output is saved into a single .csv file. <br />
 [The output looks like this](pics/output.png) <br />
 The extra columns and redundant column names are generated during batch processing and can be easily removed afterwards. <br />
 
+Way to use it. Type the below commands into the command line: <br />
+$ python touzhongwang.py YOUR-USERNAME YOUR-PASSWORD <br />
+
 Running environment: <br />
 python-2.7.12, ubuntu-16.04-LTS, latest Firefox (with geckodriver executable) <br />
 
